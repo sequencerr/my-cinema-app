@@ -1,6 +1,6 @@
 # Cinema App
 
-Cinema App is a Java based web application that allows allows users to browse and purchase tickets for movies. It is developed using Spring framework and uses Spring Security for authentication and authorization. The database is managed using Hibernate ORM. My project is using 3-layer architecture and following SOLID principles.
+Cinema App is a Java based web application that allows users to browse and purchase tickets for movies. It is developed using Spring framework and uses Spring Security for authentication and authorization. The database is managed using Hibernate ORM. My project is using 3-layer architecture and following SOLID principles.
 
 <!-- TOC -->
 * [Cinema App](#cinema-app)
