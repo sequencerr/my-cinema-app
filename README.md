@@ -7,7 +7,7 @@ Cinema App is a Java based web application that allows users to browse and purch
     * [Features](#features)
     * [Used Technologies](#used-technologies)
     * [Set-up and Running the Project](#set-up-and-running-the-project)
-* [UML Diagram](#diagram-of-database-models-and-orm-entities)
+* [UML Diagram](#diagram-of-entities)
 <!-- TOC -->
 
 ### Features
@@ -43,6 +43,6 @@ Cinema App is a Java based web application that allows users to browse and purch
    - Username: `admin@i.ua`
    - Password: `admin123`
 
-# Diagram of database models and orm entities
+# Diagram of entities
 
 ![](https://i.imgur.com/0rNffBY.png)
