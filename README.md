@@ -7,7 +7,7 @@ Cinema App is a Java based web application that allows users to browse and purch
     * [Features](#features)
     * [Used Technologies](#used-technologies)
     * [Set-up and Running the Project](#set-up-and-running-the-project)
-* [UML Diagram](#uml-diagram)
+* [UML Diagram](#diagram-of-database-models-and-orm-entities)
 <!-- TOC -->
 
 ### Features
@@ -19,27 +19,30 @@ Cinema App is a Java based web application that allows users to browse and purch
 
 ### Used Technologies
 
-| Name            | ver.      |
-|-----------------|-----------|
-| Java            | `17.0.4`  |
-| Apache Tomcat   | `9.0.69`  |
-| Maven           | `3.8.6`   |
-| Spring Core/MVC | `5.3.20`  |
-| Spring Security | `5.6.10`  |
-| Hibernate       | `5.6.14`  |
+| Name              | version        |
+|-------------------|----------------|
+| Java              | `17.0.4`       |
+| Apache Tomcat     | `9.0.69`       |
+| Maven             | `3.8.6`        |
+| PostgreSQL Server | `15.1` (win32) |
+| Spring Core/MVC   | `5.3.20`       |
+| Spring Security   | `5.6.10`       |
+| Hibernate         | `5.6.14`       |
 
 ### Set-up and Running the Project
 
 1. Clone the repository to your local machine.
 2. Open the project in your preferred Java IDE (Eclipse, IntelliJ, etc.).
-3. Set up a local MySQL database and update the database configuration in the `db.properties` file.
+3. Set up a local MySQL database and update the database configuration in the [`db.properties`](https://github.com/sequencerr/my-cinema-app/blob/main/src/main/resources/db.properties#L2) file.
 4. Import all the required dependencies (Reload All Maven Projects).
 5. Configure tomcat
-6. Run the project and go to http://localhost:8080 in your web browser.
+   - I recommend to use the same version as I used
+   - Do not forget to remove `context path`
+6. Run the project and go to http://localhost:8080/login in your web browser.
 7. To access the application you may log in with following credentials (configurable in the `DataInitializer` class):
    - Username: `admin@i.ua`
    - Password: `admin123`
 
-# UML Diagram
+# Diagram of database models and orm entities
 
 ![](https://i.imgur.com/0rNffBY.png)
