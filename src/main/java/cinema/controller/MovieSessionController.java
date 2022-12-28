@@ -9,7 +9,6 @@ import cinema.service.mapper.ResponseDtoMapper;
 import cinema.util.DateTimePatternUtil;
 import java.time.LocalDate;
 import java.util.List;
-import java.util.stream.Collectors;
 import javax.validation.Valid;
 import org.springframework.format.annotation.DateTimeFormat;
 import org.springframework.web.bind.annotation.DeleteMapping;
@@ -55,7 +54,7 @@ public class MovieSessionController {
         return movieSessionService.findAvailableSessions(movieId, date)
                 .stream()
                 .map(movieSessionResponseDtoMapper::mapToDto)
-                .collect(Collectors.toList());
+                .toList();
     }
 
     @PutMapping("/{id}")

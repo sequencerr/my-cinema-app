@@ -3,9 +3,8 @@ package cinema.service.impl;
 import cinema.dao.RoleDao;
 import cinema.model.Role;
 import cinema.service.RoleService;
+import javax.persistence.EntityNotFoundException;
 import org.springframework.stereotype.Service;
-
-import java.util.Optional;
 
 @Service
 public class RoleServiceImpl implements RoleService {
@@ -21,7 +20,8 @@ public class RoleServiceImpl implements RoleService {
     }
 
     @Override
-    public Optional<Role> findByName(String name) {
-        return roleDao.findByName(name);
+    public Role getByName(String name) {
+        return roleDao.getByName(name).orElseThrow(() ->
+                new EntityNotFoundException("Role not found. name=" + name));
     }
 }
