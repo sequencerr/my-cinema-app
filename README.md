@@ -33,7 +33,7 @@ Cinema App is a Java based web application that allows users to browse and purch
 
 1. Clone the repository to your local machine.
 2. Open the project in your preferred Java IDE (Eclipse, IntelliJ, etc.).
-3. Set up a local MySQL database and update the database configuration in the [`db.properties`](https://github.com/sequencerr/my-cinema-app/blob/main/src/main/resources/db.properties#L2) file.
+3. Set up a local MySQL/PostgreSQL server and update the database configuration in the [`db.properties`](https://github.com/sequencerr/my-cinema-app/blob/main/src/main/resources/db.properties#L2) file.
 4. Import all the required dependencies (Reload All Maven Projects).
 5. Configure tomcat
    - I recommend to use the same version as I used
